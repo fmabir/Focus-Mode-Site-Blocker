@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Focus Mode</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="popup-container">
+    <header class="popup-header">
+      <h1 class="brand-title">Focus Mode</h1>
+      <p class="subtitle">Stay focused, stay productive</p>
+    </header>
+    
+    <main class="popup-content">
+      <div id="start-view" class="view">
+        <div class="input-group">
+          <label for="duration-input" class="input-label">Session Duration</label>
+          <div class="input-wrapper">
+            <input type="number" id="duration-input" placeholder="25" min="1" value="25" class="duration-input">
+            <span class="input-suffix">minutes</span>
+          </div>
+        </div>
+        <button id="start-btn" class="btn btn-primary">
+          <span class="btn-icon">▶</span>
+          <span>Start Focus Session</span>
+        </button>
+      </div>
+      
+      <div id="active-view" class="view">
+        <div class="timer-container">
+          <div class="timer-label">Time Remaining</div>
+          <div id="timer-display" class="timer-display">00:00</div>
+        </div>
+        <button id="stop-btn" class="btn btn-danger">
+          <span class="btn-icon">⏹</span>
+          <span>End Session</span>
+        </button>
+      </div>
+    </main>
+    
+    <footer class="popup-footer">
+      <button id="options-btn" class="btn btn-secondary">
+        <span>⚙️</span>
+        <span>Manage Sites</span>
+      </button>
+      <div class="credit">Developed by Abir</div>
+    </footer>
+  </div>
+  
+  <script src="popup.js"></script>
+</body>
+</html>
+

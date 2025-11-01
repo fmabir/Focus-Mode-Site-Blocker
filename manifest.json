@@ -1,0 +1,20 @@
+{
+  "manifest_version": 3,
+  "name": "Focus Mode",
+  "version": "1.0",
+  "description": "Block distracting websites and stay focused with timed sessions. Beautiful UI with motivational quotes to keep you productive.",
+  "permissions": [
+    "tabs",
+    "storage",
+    "alarms"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "options_page": "options.html",
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Focus Mode"
+  }
+}
+
